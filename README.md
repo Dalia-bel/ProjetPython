@@ -14,6 +14,7 @@ To run this script, make sure you have
 
 Python 3 installed on your system.
 The matplotlib library is installed (pip install matplotlib).
+Tkinter library for Python (sudo apt-get install python3-tk)
 
 
 
