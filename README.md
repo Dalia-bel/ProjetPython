@@ -10,6 +10,7 @@ This script analyses SAM files, a common bioinformatics format used to store rea
 
 #Prerequisites
 
+
 To run this script, make sure you have
 
 Python 3 installed on your system.
@@ -23,6 +24,7 @@ Tkinter library for Python (sudo apt-get install python3-tk)
 
 
 #How to use
+
 
 Run the script in a terminal with the following command
 
@@ -44,8 +46,9 @@ python3 projet.py mapping.sam 20
 
 #Functionalities
 
+
 1. Count Mapped Reads
-2. 
+   
 Function: countMappedReads(sam_file)
 
 Counts the total number of mapped reads in the given SAM file.
@@ -56,7 +59,7 @@ Output: The total number of mapped reads: <count>
 
 
 2. Counting reads by flags
-3. 
+   
 Function: countFlags(sam_file, minQ=0)
 
 Analyses paired reads to count instances where:
@@ -82,7 +85,6 @@ Function: countReadsBySegment(sam_file, segment_size=10000)
 
 Groups reads by their start positions along the reference chromosomes, divided into segments (default size: 10,000 bp).
 Summarises read counts per segment.
-
 
 Output:
 
@@ -120,17 +122,18 @@ Y axis: Number of reads in each range.
 
 #Example output
 
+
 For an input SAM file with min_quality=20, the script will output
 
-#Q1 Total number of mapped reads:350015
+Q1: Total number of mapped reads:350015
 
-#Q2 Number of paired reads with both reads mapped: 154941
+Q2: Number of paired reads with both reads mapped: 154941
 
 Number pf paired reads with one read mapped:0
 
-#Q3 Distribution of reads across chromosome segments.
+Q3: Distribution of reads across chromosome segments.
 
-#Q4 A histogram visualising the distribution of MAPQ scores.
+Q4: A histogram visualising the distribution of MAPQ scores.
 
 For both questions 3 and 4, look for answers in your terminal
 
@@ -138,6 +141,7 @@ For both questions 3 and 4, look for answers in your terminal
 
 
 #Notes
+
 
 Graphical backend: The script uses the TkAgg backend for Matplotlib. Make sure your Python environment supports this
 
